@@ -1,6 +1,0 @@
-name = "ubio_rss_feed"
-description = "uBio RSS Feed Parser"
-core = 6.x
-package = MBLWHOI
-dependencies[] = feeds
-
