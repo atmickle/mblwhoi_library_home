@@ -113,6 +113,14 @@
 		    		<?php print $nav; ?>
 		    	</div>
 		    </div>
+
+
+		    <div id="notices" class="strip">
+		    	<div class="page">
+                          <?php print $notices; ?>
+		    	</div>
+		    </div>
+
 		    
 		    <div id="search" class="strip">
 		    	<div class="page">
@@ -124,13 +132,14 @@
 		    	</div>
 		    
 		    </div>
+
 		    
 		    <div id="author-pubs" class="strip">
 		    	<div class="page">
 		    		<h3>Woods Hole Publications</h3>
 		    		<div id="pub-box" class="hp-section">
 		    			<?php
-							$view = views_get_view('author_pubs2');
+							$view = views_get_view('author_works');
 							print $view->execute_display('default');
 							$view2 = views_get_view('species_pubs');
 							print $view2->execute_display('default');

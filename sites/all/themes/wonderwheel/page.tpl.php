@@ -116,6 +116,13 @@
 		    	</div>
 		    </div>
 		    
+
+		    <div id="notices" class="strip">
+		    	<div class="page">
+                          <?php print $notices; ?>
+		    	</div>
+		    </div>
+
 		    <div id="search" class="strip">
 		    	<div class="page">
 		    		<h3>Search</h3>

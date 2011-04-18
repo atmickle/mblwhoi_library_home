@@ -48,6 +48,7 @@ conditional-stylesheets[if IE][all][] = ie.css
 regions[topstrip]         = top strip
 regions[header]         = header
 regions[nav]         = nav
+regions[notices]         = notices
 regions[search]         = search
 regions[content_top]    = content top
 regions[content_bottom] = content bottom

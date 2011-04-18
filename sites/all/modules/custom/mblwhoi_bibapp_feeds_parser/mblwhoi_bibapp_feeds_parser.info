@@ -1,0 +1,6 @@
+name = "mblwhoi_bibapp_feeds_parser"
+description = "MBLWHOI Library BibApp Works RDF Feed Parser"
+core = 6.x
+package = MBLWHOI
+dependencies[] = feeds
+

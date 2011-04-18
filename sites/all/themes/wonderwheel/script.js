@@ -16,7 +16,7 @@
  
 		
 		$(function() {
-		    $(".view-author-pubs2 .item-list").jCarouselLite({
+		    $(".view-author-works .item-list").jCarouselLite({
 		        btnNext: "#auth-btns .next",
 		        btnPrev: "#auth-btns .prev",
 		        scroll: 3
@@ -36,22 +36,22 @@
 		$('.view-species-pubs').addClass('hidepub');
 		
 		$('#auth-tab').click(function () {
-	      $('.view-author-pubs2').removeClass('hidepub');
+	      $('.view-author-works').removeClass('hidepub');
 	      $('.view-species-pubs').addClass('hidepub');
 	      $('#auth-tab').addClass('active-pubs');
 	      $('#spec-tab').removeClass('active-pubs');
 	      
 	    });
 	    
-	     $('#spec-tab').click(function () {
-	      $('.view-author-pubs2').addClass('hidepub');
+	      $('#spec-tab').click(function () {
+	      $('.view-author-works').addClass('hidepub');
 	      $('.view-species-pubs').removeClass('hidepub');
 	      $('#auth-tab').removeClass('active-pubs');
 	      $('#spec-tab').addClass('active-pubs');
 	    });
 		
 				
-		$('#block-custom_search_blocks-1 .content').append('<div class="adv-link"><a href="/research-databases/a">Browse All</a></div>');
+	     $('#block-custom_search_blocks-1 .content').append('<div class="adv-link"><a href="/research-databases/a">Browse All</a></div>');
 
 		
 

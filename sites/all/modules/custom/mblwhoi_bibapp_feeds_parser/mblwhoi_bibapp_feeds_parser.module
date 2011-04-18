@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Implementation of hook_feeds_plugins().
+ */
+function mblwhoi_bibapp_feeds_parser_feeds_plugins() {
+  $info = array();
+  $info['BibAppParser'] = array(
+    'name' => 'BibApp RSS Parser',
+    'description' => 'Parses bibapp works RDF',
+    'handler' => array(
+      'parent' => 'FeedsParser', // A plugin needs to derive either directly or indirectly from FeedsFetcher, FeedsParser or FeedsProcessor.
+      'class' => 'BibAppWorksRdfParser',
+      'file' => 'BibAppWorksRdfParser.inc',
+      'path' => drupal_get_path('module', 'mblwhoi_bibapp_feeds_parser'),
+    ),
+  );
+
+  $info['BibAppNodeProcessor'] = array(
+    'name' => 'BibApp Node Processor',
+    'description' => 'Creates nodes from processed BibApp Works Feed',
+    'handler' => array(
+      'parent' => 'FeedsNodeProcessor', // A plugin needs to derive either directly or indirectly from FeedsFetcher, FeedsParser or FeedsProcessor.
+      'class' => 'BibAppWorksRdfNodeProcessor',
+      'file' => 'BibAppWorksRdfNodeProcessor.inc',
+      'path' => drupal_get_path('module', 'mblwhoi_bibapp_feeds_parser'),
+    ),
+  );
+
+  return $info;
+
+  }
+
+
+function mblwhoi_bibapp_feeds_parser_enable() {
+
+  //clear the cache to display in Feeds as available plugin.
+  cache_clear_all('plugins:feeds:plugins', 'cache');
+}
+
+?>
