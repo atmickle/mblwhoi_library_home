@@ -1,0 +1,474 @@
+/* @override 
+   http://mblwhoi.wonderwheelcreative.com/sites/all/themes/wonderwheel/all.css?Q
+   http://mblwhoi.wonderwheelcreative.com/sites/all/themes/wonderwheel/all.css?U
+   http://mblwhoi.wonderwheelcreative.com/sites/all/themes/wonderwheel/all.css?a
+   http://mblwhoi.wonderwheelcreative.com/sites/all/themes/wonderwheel/all.css?e
+   http://mblwhoi.wonderwheelcreative.com/sites/all/themes/wonderwheel/all.css?1
+   */
+
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
+@import 'iconize.css';
+@import 'publications_carousel.css';
+@import 'quicklinks.css';
+@import 'searchtabs.css';
+
+/* ------------------- reset ------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+	margin: 0;
+	padding: 0;
+	/*
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	*/
+}
+
+
+/* No underline for superscripts */
+sup a{
+    text-decoration: none;
+}
+
+body {
+	line-height: 1;
+	color: black;
+}
+ul.unlist, ul.unlist li {
+	list-style: none;
+}
+ol, ul { margin: 0 0 1em 1em; padding-left: 1em; }
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+.imgbtn {
+	margin:0;
+	padding:0;
+    border:0;
+    text-indent: -1000em;
+    cursor: pointer; /* hand-shaped cursor */
+    cursor: hand; /* for IE 5.x */
+    overflow: hidden;
+}
+
+/* ------------------- links ------------------- */
+
+a, a:active, a:link, a:visited { color:#00948E; }
+a:hover { color:#00948E; text-decoration: none;}
+
+/* ------------------- type -------------------  */
+
+h1, h2, h3, h4, h5, p, li, td, div { font-family: Georgia, Times New Roman, serif;}
+
+body {font:13px/1.5 Georgia, Times New Roman, serif;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}
+
+pre,code,kbd,samp,tt {font-family:monospace;*font-size:108%;line-height:100%;}
+
+
+/* ------------------- @basic structure ------------------- */
+
+body { background: #ebebea url(img/bg.png) repeat 0 0; color: #051d1b;}
+
+.page {
+		position: relative;
+		max-width: 960px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 0 10px;
+	}
+
+h3 {
+	font: bold 108%/1.5em Cantarell, Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	/* text-shadow: 0px 1px 1px #fff; */
+	}
+	
+	/* Added by JF for testing */
+.searchtabs h3 {
+	float: none;
+}
+
+
+.front h3 {
+    float: left;
+    width: 140px;	
+}
+	
+	.strip {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e2e2e2;
+	}
+	
+	.front .sec {
+		width: 31%;
+		float: left;
+		padding: 0 10px;
+		border-right: 1px solid #e2e2e2;
+		/*border-left: 1px solid #fff;*/
+		-webkit-box-shadow:1px 0px 0px #fff;
+		-moz-box-shadow:1px 0px 0px #fff;
+		box-shadow:1px 0px 0px #fff;
+	}
+		.front .sec-first {padding-left: 0;}
+		.front .sec-last {
+			padding-right: 0; 
+			border-right: none;
+			-webkit-box-shadow:none;
+			-moz-box-shadow:none;
+			box-shadow:none;}
+		
+	.sec h4 {
+		font: bold 108%/1.5em Cantarell, Helvetica, Arial, sans-serif;
+		color: #051d1b;
+		text-transform: uppercase;
+		margin-bottom: .5em;
+		/* text-shadow: 0px 1px 1px #fff; */
+	}
+	
+	#main {padding-top: 38px;}
+
+	#search {
+	    padding-top: 24px;
+	}
+	
+		.not-front #main {padding-top: 16px;}
+	
+
+/* ------------------- @header ------------------- */
+#header {
+	background: url(img/hdr6.jpg) repeat-x 100%;
+	height: 154px;
+	}
+	
+	.section-services #header {background: url(img/hdr5.jpg) repeat-x 100%;}
+	.section-collections #header {background: url(img/hdr1.jpg) repeat-x 100%;}
+	.section-projects #header {background: url(img/hdr2.jpg) repeat-x 100%;}
+	.section-about-library #header {background: url(img/hdr7.jpg) repeat-x 100%;}
+	.section-contact #header {background: url(img/hdr8.jpg) repeat-x 100%;}
+	
+	
+	#site-name {
+	width: 155px; height: 107px;
+	}
+	
+	#site-name a {
+	display: block;
+	width: 155px; height: 107px;
+	overflow: hidden; text-indent: -999em;
+	background: url(img/logo.jpg) no-repeat;
+	}
+	
+	#topstrip {
+		background: rgb(19,32,30);
+		background: rgba(19,32,30,0.6);
+		text-align: right;
+		height: 32px;
+		z-index: 200;
+
+	}
+	
+	#topstrip p {
+	color: #00948e;
+	font: 11px/32px Cantarell, Helvetica, Arial, sans-serif;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	}
+	
+		#topstrip #block-block-10 {
+		width: 600px;
+		float: left;
+	}
+		#topstrip #block-block-10 p {
+			text-align: left;
+	}
+	
+		#topstrip #block-block-1 {
+			width: 300px;
+			float: right;
+	}
+	
+	#topstrip a {
+		color: #00948e;
+		text-decoration: none;	
+	}
+	
+	#topstrip a:hover {
+		color: #fff;
+		/* text-shadow: 1px 1px 8px #fff; */
+	}
+	
+	#topstrip a span {
+		font: normal 14px/32px Georgia, Times New Roman, serif;
+	}
+	
+	
+/* ------------------- @banner ------------------- */
+/*#hdr-img {
+	position: absolute; top: 0; right: 0;
+	z-index: 0;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 563px; height: 154px;
+	background: url(img/hdr1.png);
+	}*/
+/* ------------------- @nav ------------------- */
+#nav {
+	height: 40px;
+	background: #13201f;
+	border-top: 1px solid rgb(39,65,63);
+	border-top: 1px solid rgba(39,65,63,0.5);
+	position: relative;
+	z-index: 2000;
+	}
+	
+	#nav .page {
+	overflow: visible;
+	}
+	
+/* ------------------- @sidebar ------------------- */
+
+#content-area {
+	overflow: hidden;
+	}
+.with-sidebar {
+	float: left;
+	width: 620px;
+	}
+#sidebar {
+	float: right;
+	width: 300px;
+	margin-left: 20px;
+	}
+	
+	#sidebar .block {
+		margin-bottom: 2em;
+	}
+
+#sidebar h2 {
+	font-size: 100%;
+	}
+	
+	#sidebar .blue ul {
+	margin: 0; padding: 0;
+	}
+	
+	#sidebar .blue ul ul {
+		padding-left: 1em;
+	}
+	
+	#sidebar .blue li {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+	#sidebar .blue li a {
+	line-height: 1.75em;
+	}
+
+#sidebar .blue li.expanded {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+		
+	.blue {
+	padding: 1em 0;
+	background: url(img/sidebar-bg.png) repeat;
+	}
+	
+	.blue .block-inner {
+	margin: 0 1em;
+	}
+	
+	.blue h2 a {
+		color: #051d1b;
+		text-decoration: none;
+	}
+	
+		.blue h2 a:hover {
+		text-decoration: underline;
+	}
+	
+	.blue a {
+		color: #051d1b;
+	}
+
+
+/* News/Alerts */
+
+#notices{
+    background: #fbfbfb; position: relative; z-index: 1;
+    border-bottom: 0;
+}
+
+#notices .mblwhoi-notices{
+    background-color: #FFCCCC;
+    color: #A30000;
+    padding: 10px;
+}	
+
+
+/* ------------------- @author/species pubs ------------------- */
+#author-pubs {
+    height: 133px;
+}
+
+#author-pubs .page {
+    position: relative;
+    height: 150px;
+    
+}
+
+#author-pubs h3 {
+    padding-top: 17px;
+}
+
+
+
+#author-pubs .hp-section {
+    margin-left: 160px;
+    padding: 6px 0 46px 0;
+    overflow: visible;
+}
+
+
+
+/* ------------------- @homepage ------------------- */
+.hp-section {
+	margin-left: 160px;
+	padding: 0 0 24px 0;
+	}
+	
+/* ------------------- @main ------------------- */
+#main {
+	border-bottom: 0px;
+	padding-bottom: 3em;
+	}
+	
+	h2 {
+	 font: bold 200%/1em Cantarell, Helvetica, Arial, sans-serif;
+	 text-transform: uppercase;
+	 /* text-shadow: 0px 1px 1px #fff; */
+	 margin-bottom: .5em;
+	 color: #113330;
+	}
+	
+	#crumbs {
+		margin-bottom: 30px;
+	}
+	
+	#main .content p {
+		line-height: 1.5em;
+		/*margin-bottom: 1em;*/
+	}
+
+/* ------------------- @research db results ------------------- */	
+.view-db-by-alpha .view-content ul,
+.view-db-by-terms .view-content ul {
+	margin: 1em 0 0 0; padding: 0;
+	list-style: none;
+	clear: both;
+	}
+	
+	.view-db-by-alpha .view-content li,
+	.view-db-by-terms .view-content li
+	 {
+	margin: 0; padding: 1em 0;
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	overflow: hidden;
+	}
+	
+	.view-db-by-alpha .view-content h4,
+	.view-db-by-terms .view-content h4
+	 {
+		width: 180px;
+		float: left;
+		margin-right: 1em;
+	}
+	
+	.view-db-by-alpha .view-content h4 a,
+	.view-db-by-terms .view-content h4 a {
+		font: bold 108%/1em Cantarell, Helvetica, Arial, sans-serif;
+		color: #051d1b;
+		line-height: 2em;
+		text-transform: uppercase;
+	}
+	
+	.db-info {
+	float: left;
+	width: 400px;
+	padding-top: .25em;
+	}
+	
+	.view-db-by-alpha p,
+	.view-db-by-terms p
+	 {
+		margin-bottom: .5em;
+		line-height: 1.75em;
+		font-size: 108%;
+	}
+	.db-term {
+	background: #fff;
+	padding: .25em .5em;
+	margin-right: .5em;
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+	text-transform: uppercase;
+	font: 83%/1em Cantarell, Helvetica, Arial, sans-serif;
+	}
+
+/* ------------------- @contact ------------------- */
+
+#webform-component-your_name {clear: both; margin-top: 1em;}
+#webform-component-online {overflow: hidden;}
+/* ------------------- @footer ------------------- */
+/*stuff to make the footer stick*/
+html, body {height: 100%;}
+#bodwrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+	}
+#footer, .push {
+	height: 4em;
+	}
+#footer {
+	background: url(img/ftr-bg.png) repeat;
+	padding: 1em 0;
+	border-top: 1px solid #e2e2e2;
+	text-align: right;
+	color: #141c1c;
+	}

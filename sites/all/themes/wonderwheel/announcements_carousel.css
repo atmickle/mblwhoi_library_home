@@ -1,0 +1,165 @@
+/* Styling for Publications Carousels */
+
+#announcements-box {
+    height: 93px;
+    background: url(img/pub-bg.png);
+    margin: 0 0 0 160px;
+    position: relative; 
+}
+
+#pub-shad {
+    background: url(img/authorpub-shad.png);
+    width: 795px; height: 14px;
+    position: absolute; bottom: -14px; left: 0;
+}
+
+#announcements-box .item-list {
+    height: 134px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#announcements-box .item-list ul {
+    margin: 0; padding: 0;
+    list-style: none;
+    display: block;
+    overflow: hidden;
+}
+
+#announcements-box .item-list li {
+    width: 235px;
+    height: 102px !important;
+    float: left;
+    display: block;
+    overflow: hidden;
+    list-style: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0;
+}
+
+#announcements-box .imagefield-field_pub_cover, #announcements-box .species-image {
+    float: left;
+    padding: 4px 5px 7px 4px;
+    margin-right: 2px;
+    background-image: url(img/authorpub-coverbg.png);
+}
+
+#announcements-box .view-footer { 
+    position:absolute;
+    bottom:0; right: 0;
+    width: 200px; height: 30px;}	
+
+.pub-text{
+    color: #254441;
+}
+
+.pub-text h4 {
+    font: 85% Cantarell, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.pub-text h5 {
+    font-size: 85%;
+}
+
+.pub-text h5.citation {
+    font-size: 85%;
+    font-style: italic;
+    overflow: hidden;
+}
+
+.pub-text h4 a, .pub-text h5 a{
+    text-decoration: none;
+}
+
+.pub-text h4 a:hover, .pub-text h5 a:hover{
+    text-decoration: underline;
+}
+
+.pub-text h4 a{
+    color: #FFFFFF;
+}
+.pub-text h5 a{
+    color: #254441;
+}
+
+
+
+.pub-text p {
+    color: #254441;
+}
+
+.pub-btns {
+    position: absolute;
+    z-index: 1000;
+    bottom:10px; right: 0;
+    overflow: hidden;
+    width: 70px; height: 23px;
+}
+
+.pub-btns a {
+    display: block;
+    float: left;
+    width: 23px; height: 23px;
+    overflow: hidden; text-indent: -999em;
+}
+
+.pub-btns a:active {margin-top: 1px;}
+
+.pub-btns .prev {
+    background: url(img/authorpub-btns.png) no-repeat 0 0;
+    margin-right: 10px;
+}
+
+.pub-btns .next {background: url(img/authorpub-btns.png) no-repeat -30px 0;}
+
+#pub-tabs {
+    position: absolute;
+    z-index: 1000;
+    bottom:6px; left: 18px;
+    overflow: hidden;
+    width: 374px; height: 23px;
+    background-color: rgb(35,63,58);
+    background-color: rgba(35,63,58,0.2);
+    padding: 3px 4px 0;
+    border: 1px solid #50AFB3;
+    text-align: center;
+    -webkit-border-bottom-left-radius: 9px;
+    -webkit-border-bottom-right-radius: 9px;
+    -moz-border-radius-bottomleft: 9px;
+    -moz-border-radius-bottomright: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    box-shadow:inset 2px 2px 3px rgba(0,0,0,.2);
+    -moz-box-shadow:inset 2px 2px 3px rgba(0,0,0,.2);
+    -webkit-box-shadow:inset 2px 2px 3px rgba(0,0,0,.2);
+}
+
+#pub-tabs a {
+    color: #77ECEF;
+    font: 108% Cantarell, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#pub-tabs .active-pubs {color: #fff;}
+#pub-tabs a:hover {color: #fff; text-shadow:1px 1px 8px #fff;}
+
+.showpub {display: block !important;}
+.hidepub {display: none !important;}
+
+
+#announcements-box .announcement-icon {
+    float: left;
+    padding: 4px 5px 7px 4px;
+    margin-right: 2px;
+    background-image: url(img/authorpub-coverbg.png);
+    width: 67px;
+    height: 92px;
+}
+
+.item-list .pub-text{
+    height: 100px;
+}

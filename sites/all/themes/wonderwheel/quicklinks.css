@@ -1,0 +1,27 @@
+#quicklinks-strip{
+    padding-top: 24px;
+    background: #fbfbfb; 
+    position: relative; 
+    z-index: 1;
+}
+
+#quicklinks{
+    padding: 0 0 24px;
+}
+
+#quicklinks li{
+    display: inline;
+    list-style-type: none;
+    padding: 2px;
+    white-space: nowrap;
+}
+
+#quicklinks li a{
+    color: #00948E;
+    font: bold 14px/1em Cantarell,Helvetica,Arial,sans-serif;
+    height: 50px;
+    padding: 0 0.75em;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}

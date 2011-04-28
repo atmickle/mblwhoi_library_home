@@ -1,0 +1,17 @@
+a.iconize {
+    padding-right: 20px;
+    line-height: 16px; /* To center the text vertically with the icon */
+    padding-top: 2px;
+}
+
+a.iconize.pdf {
+    background: url(iconize_images/application-pdf.png) no-repeat right center;
+}
+ 
+a.iconize.txt {
+    background: url(iconize_images/text-plain.png) no-repeat right center;
+}
+ 
+a.iconize.email {
+    background: url(iconize_images/email.png) no-repeat right center;
+}
