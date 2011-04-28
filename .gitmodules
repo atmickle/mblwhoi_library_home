@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/custom/mblwhoi_bibapp_feeds_parser"]
+	path = sites/all/modules/custom/mblwhoi_bibapp_feeds_parser
+	url = git://github.com/adorsk-whoi/mblwhoi_bibapp_feeds_parser.git
