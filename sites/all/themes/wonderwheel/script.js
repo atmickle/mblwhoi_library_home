@@ -19,7 +19,7 @@
 		    $(".view-author-works .item-list").jCarouselLite({
 		        btnNext: "#auth-btns .next",
 		        btnPrev: "#auth-btns .prev",
-		        scroll: 3
+		        scroll: 2
 
 		    });
 		});
@@ -28,7 +28,7 @@
 		    $(".view-species-pubs .item-list").jCarouselLite({
 		        btnNext: "#spec-btns .next",
 		        btnPrev: "#spec-btns .prev",
-		        scroll: 3
+		        scroll: 2
 
 		    });
 		});
