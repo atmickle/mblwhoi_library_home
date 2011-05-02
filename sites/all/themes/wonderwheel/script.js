@@ -19,6 +19,7 @@
 		    $(".view-author-works .item-list").jCarouselLite({
 		        btnNext: "#auth-btns .next",
 		        btnPrev: "#auth-btns .prev",
+            visible: 2,
 		        scroll: 2
 
 		    });
@@ -28,6 +29,7 @@
 		    $(".view-species-pubs .item-list").jCarouselLite({
 		        btnNext: "#spec-btns .next",
 		        btnPrev: "#spec-btns .prev",
+            visible: 2,
 		        scroll: 2
 
 		    });
