@@ -3,7 +3,7 @@
 #
 
 # Protect files and directories from prying eyes.
-<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl|svn-base)$|^(code-style\.pl|Entries.*|Repository|Root|Tag|Template|all-wcprops|entries|format)$">
+<FilesMatch "\.(engine|inc|info|install|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl|svn-base)$|^(code-style\.pl|Entries.*|Repository|Root|Tag|Template|all-wcprops|entries|format)$">
   Order allow,deny
 </FilesMatch>
 
@@ -11,10 +11,12 @@
 Options -Indexes
 
 # Follow symbolic links in this directory.
-Options +FollowSymLinks
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
 
 # Make Drupal handle any 404 errors.
-ErrorDocument 404 /index.php
+#ErrorDocument 404 /index.php
 
 # Force simple error message for requests for non-existent favicon.ico.
 <Files favicon.ico>
@@ -56,7 +58,13 @@ DirectoryIndex index.php
   php_value mbstring.http_input             pass
   php_value mbstring.http_output            pass
   php_value mbstring.encoding_translation   0
-  php_value memory_limit		    64M
+  php_value post_max_size 					100M
+  php_value upload_max_filesize 			100M
+  php_value max_execution_time 				6000000
+  php_value max_input_time  				1000
+  php_value memory_limit					128M
+  php_value safe_mode						off
+
 </IfModule>
 
 # Requires mod_expires to be enabled.
@@ -67,45 +75,14 @@ DirectoryIndex index.php
   # Cache all files for 2 weeks after access (A).
   ExpiresDefault A1209600
 
-  <FilesMatch \.php$>
-    # Do not allow PHP scripts to be cached unless they explicitly send cache
-    # headers themselves. Otherwise all scripts would have to overwrite the
-    # headers set by mod_expires if they want another caching behavior. This may
-    # fail if an error occurs early in the bootstrap process, and it may cause
-    # problems if a non-Drupal PHP file is installed in a subdirectory.
-    ExpiresActive Off
-  </FilesMatch>
+  # Do not cache dynamically generated pages.
+  ExpiresByType text/html A1
 </IfModule>
 
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
-
-  # If your site can be accessed both with and without the 'www.' prefix, you
-  # can use one of the following settings to redirect users to your preferred
-  # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
-  #
-  # To redirect all users to access the site WITH the 'www.' prefix,
-  # (http://example.com/... will be redirected to http://www.example.com/...)
-  # adapt and uncomment the following:
-  # RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
-  # RewriteRule ^(.*)$ http://www.example.com/$1 [L,R=301]
-  #
-  # To redirect all users to access the site WITHOUT the 'www.' prefix,
-  # (http://www.example.com/... will be redirected to http://example.com/...)
-  # uncomment and adapt the following:
-  # RewriteCond %{HTTP_HOST} ^www\.example\.com$ [NC]
-  # RewriteRule ^(.*)$ http://example.com/$1 [L,R=301]
-
-  # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
-  # VirtualDocumentRoot and the rewrite rules are not working properly.
-  # For example if your site is at http://example.com/drupal uncomment and
-  # modify the following line:
-  # RewriteBase /drupal
-  #
-  # If your site is running in a VirtualDocumentRoot at http://example.com/,
-  # uncomment the following line:
-  # RewriteBase /
+  #RewriteBase /
 
   # Rewrite URLs of the form 'x' to the form 'index.php?q=x'.
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -114,4 +91,4 @@ DirectoryIndex index.php
   RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 </IfModule>
 
-# $Id: .htaccess,v 1.90.2.5 2010/02/02 07:25:22 dries Exp $
+# $Id: .htaccess,v 1.90.2.3 2008/12/10 20:04:08 goba Exp $
