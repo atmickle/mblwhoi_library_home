@@ -27,7 +27,7 @@
 }
 
 #pub-box .item-list li {
-    width: 235px;
+    width: 355px;
     height: 102px !important;
     float: left;
     display: block;
@@ -79,6 +79,7 @@
 }
 
 .pub-text h4 a{
+    font: 85% Cantarell, Helvetica, Arial, sans-serif;
     color: #FFFFFF;
 }
 .pub-text h5 a{

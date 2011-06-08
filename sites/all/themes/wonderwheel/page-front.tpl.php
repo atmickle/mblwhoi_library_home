@@ -147,13 +147,30 @@
 							?>
 					
 					<div id="pub-tabs">
-						<a id="auth-tab" class="active-pubs" href="javascript:;">Author Publications</a> | 
-						<a id="spec-tab" href="javascript:;">Species Publications</a>
+						<a id="auth-tab" class="active-pubs" href="javascript:;">By WH Authors</a> | 
+						<a id="spec-tab" href="javascript:;">About WH Species</a>
 					</div>
 		    			<div id="pub-shad"></div>
 		    		</div>
 		    	</div>
 		    </div>
+
+
+		    <div id="announcements" class="strip">
+		    	<div class="page">
+		    		<h3>Library News and Projects</h3>
+		    		<div id="announcements-box" class="hp-section">
+		    			<?php
+							$view = views_get_view('announcements');
+							print $view->execute_display('default');
+
+					?>
+				</div>
+			</div>
+		    </div> 
+<!-- end announcements -->
+
+
 		  
 	    <div id="main" class="strip">
 			
