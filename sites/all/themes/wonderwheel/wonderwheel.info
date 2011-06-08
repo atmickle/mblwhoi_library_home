@@ -49,7 +49,6 @@ regions[topstrip]         = top strip
 regions[header]         = header
 regions[nav]         = nav
 regions[notices]         = notices
-regions[quicklinks]         = quicklinks
 regions[search]         = search
 regions[content_top]    = content top
 regions[content_bottom] = content bottom

@@ -52,9 +52,8 @@
 		
 				
 	     $('#block-custom_search_blocks-1 .content').append('<div class="adv-link"><a href="/research-databases/a">Browse All</a></div>');
-
-		
-
+		 
+		 $('.tTip').tipsy({gravity: 'e'});
 		
 	});	
 

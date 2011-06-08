@@ -95,7 +95,7 @@
 				</div> <!-- end page -->
 			</div> <!-- end topstrip -->
 	    
-		    <div class="page">
+		    <div class="page" id="hdr-main">
 		          <h1 id="site-name"><a href="/"><?php print $site_name; ?></a></h1>
 		      
 		      <?php if ($header): ?>
@@ -122,19 +122,9 @@
 		    </div>
 
 		    
-		    <div id="quicklinks-strip" class="strip">
-		    	<div class="page">
-		    		<h3>Quicklinks</h3>
-		    		<div id="quicklinks" class="hp-section">
-		    			
-		    			<?php print $quicklinks; ?>
-		    		</div> <!-- end searchtabs -->
-		    	</div>
-		    </div>
-
 		    <div id="search" class="strip">
 		    	<div class="page">
-		    		<h3>Search</h3>
+		    		<h3>Find</h3>
 		    		<div id="searchtabs" class="hp-section">
 		    			
 		    			<?php print $search; ?>

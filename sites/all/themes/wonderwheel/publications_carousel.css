@@ -1,10 +1,10 @@
 /* Styling for Publications Carousels */
 
 #pub-box {
-    height: 93px;
+    width: 795px; height: 93px;
     background: url(img/pub-bg.png);
     margin: 0 0 0 160px;
-    position: relative; 
+    position: absolute; top: 0; left: 0;
 }
 
 #pub-shad {
@@ -64,12 +64,6 @@
     font-size: 85%;
 }
 
-.pub-text h5.citation {
-    font-size: 85%;
-    font-style: italic;
-    overflow: hidden;
-}
-
 .pub-text h4 a, .pub-text h5 a{
     text-decoration: none;
 }
@@ -113,18 +107,17 @@
     margin-right: 10px;
 }
 
-.pub-btns .next {background: url(img/authorpub-btns.png) no-repeat -29px 0;}
+.pub-btns .next {background: url(img/authorpub-btns.png) no-repeat -30px 0;}
 
 #pub-tabs {
     position: absolute;
     z-index: 1000;
     bottom:6px; left: 18px;
     overflow: hidden;
-    width: auto; 
-    height: 23px;
+    width: 374px; height: 23px;
     background-color: rgb(35,63,58);
     background-color: rgba(35,63,58,0.2);
-    padding: 3px 15px 0;
+    padding: 3px 4px 0;
     border: 1px solid #50AFB3;
     text-align: center;
     -webkit-border-bottom-left-radius: 9px;

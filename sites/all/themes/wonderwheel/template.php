@@ -163,3 +163,4 @@ function wonderwheel_preprocess_block(&$vars, $hook) {
 // */
 
 drupal_add_js('sites/all/themes/wonderwheel/jcarousellite_1.0.1.min.js');
+drupal_add_js('sites/all/themes/wonderwheel/jquery.tipsy.js');
