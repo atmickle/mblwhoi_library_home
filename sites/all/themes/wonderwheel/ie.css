@@ -56,10 +56,10 @@ label {
 	}
 	
 ul.nice-menu a {
-    color: #a0ba24;
-    font: 14px/1em Arial, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0 6em 0 0;
-    line-height: 40px;
+  font: 14px/1em Arial, sans-serif;
+  line-height: 40px;
+}
+
+#alpha-search-tab {
+  width: 758px;
 }
