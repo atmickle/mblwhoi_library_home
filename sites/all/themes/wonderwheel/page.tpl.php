@@ -123,13 +123,12 @@
 		    	</div>
 		    </div>
 
-		    <?php if ($breadcrumb): ?>
-	             <div id="crumbs"><?php print $breadcrumb; ?></div>
-	            <?php endif; ?>
-
-
 		    <div id="search" class="strip">
 		    	<div class="page">
+		    <?php if ($breadcrumb): ?>
+	             <div id="crumbs" style=""><?php print $breadcrumb; ?></div>
+	            <?php endif; ?>
+
 		    		<h3>Find</h3>
 		    		<div id="searchtabs" class="hp-section">
 		    			
