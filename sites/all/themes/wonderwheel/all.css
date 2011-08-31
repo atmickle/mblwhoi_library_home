@@ -35,6 +35,12 @@ table, caption, tbody, tfoot, thead, tr, th, td
 }
 
 
+/* Admin menu stacked on top of everything */
+#admin-menu{
+    z-index: 9999;
+}
+
+
 /* No underline for superscripts */
 sup a{
     text-decoration: none;
