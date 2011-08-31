@@ -123,6 +123,11 @@
 		    	</div>
 		    </div>
 
+		    <?php if ($breadcrumb): ?>
+	             <div id="crumbs"><?php print $breadcrumb; ?></div>
+	            <?php endif; ?>
+
+
 		    <div id="search" class="strip">
 		    	<div class="page">
 		    		<h3>Find</h3>
@@ -145,10 +150,8 @@
 		          </div> <!-- /#content-top -->
 		        <?php endif; ?>
 		
-		        <?php if ($breadcrumb or $tabs or $help or $messages): ?>
+		        <?php if ($tabs or $help or $messages): ?>
 		          <div id="content-header">
-		           
-		           <div id="crumbs"><?php print $breadcrumb; ?></div>
 		           
 		            <?php print $messages; ?>
 		            <?php if ($tabs): ?>
