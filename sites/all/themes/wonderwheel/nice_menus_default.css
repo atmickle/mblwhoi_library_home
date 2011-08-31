@@ -73,9 +73,9 @@ ul.nice-menu a {
 }
 
 ul.nice-menu a:hover {
-		color: #fff;
-	text-shadow: 1px 1px 8px #fff;
-	}
+    color: #ffffff;
+    text-shadow: 1px 1px 8px #fff;
+}
 
 ul.nice-menu ul,
 /* Repeat for Garland header. */
@@ -97,29 +97,46 @@ ul.nice-menu ul li {
   padding: .5em 1em;
 }
 
+ul.nice-menu > li {
+  margin-left: 5px;
+  margin-right: 5px;
+}  
+
+ul.nice-menu > li:first-child {
+  border-top: 0px none;
+  margin-left: 0px;
+}
+
 /******************************
  HORIZONTAL (down) menus
 ******************************/
 
 ul.nice-menu-down {
   float: left;
-  border: 0;
 }
 
 ul.nice-menu-down li {
   border-top: 0px none;
 }
 
+ul.nice-menu-down li:hover {
+    background-color: #13201F;
+}
+
+ul.nice-menu-down li:hover > a{
+    color: #fff;
+}
+
 ul.nice-menu-down li li {
 	border-top: 1px solid rgb(39,65,63);
 	border-top: 1px solid rgba(39,65,63,0.5);
-	background: #13201f;
+	background: #ffffff;
 }
 
 ul.nice-menu-down li li a {
 	line-height: 1.5em;
 	font-size: 12px;
-	color: #639F9A;
+	color: black;
 	}
 	
 	/*ul.nice-menu-down li li a:hover {
@@ -129,9 +146,14 @@ ul.nice-menu-down li li a {
 
 ul.nice-menu-down ul {
   left: 0;
+  /*
   box-shadow:2px 2px 3px #595959;
   -moz-box-shadow:2px 2px 3px #595959;
   -webkit-box-shadow:2px 2px 3px #595959;
+  */
+  border-left: thin solid #dddddd;
+  border-right: thin solid #dddddd;
+  border-bottom: thin solid #dddddd;
 }
 
 /*
@@ -151,7 +173,7 @@ ul.nice-menu-down ul li {
 ul.nice-menu-down li ul li ul,
 /* Repeat for Garland header. */
 #header-region ul.nice-menu-down li ul li ul {
-  display: none;
+ display: none;
 }
 
 
