@@ -114,11 +114,20 @@ function wonderwheel_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
+
+
 function wonderwheel_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+  if (module_exists('path')) {
+    $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
+    if ($alias != $_GET['q']) {
+      $template_filename = 'page';
+      foreach (explode('/', $alias) as $path_part) {
+        $template_filename = $template_filename . '-' . $path_part;
+        $vars['template_files'][] = $template_filename;
+      }
+    }
+  }
 }
-// */
 
 /**
  * Override or insert variables into the node templates.
