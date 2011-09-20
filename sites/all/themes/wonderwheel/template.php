@@ -173,3 +173,26 @@ function wonderwheel_preprocess_block(&$vars, $hook) {
 
 drupal_add_js('sites/all/themes/wonderwheel/jcarousellite_1.0.1.min.js');
 drupal_add_js('sites/all/themes/wonderwheel/jquery.tipsy.js');
+
+
+/**                                                                             
+ * Implementation of hook_theme_breadcrumb                                      
+ */
+
+function wonderwheel_breadcrumb($breadcrumb){
+
+    // Remove 'home' breadcrumb (first array element) if it is present          
+    if (!empty($breadcrumb)) {
+        array_shift($breadcrumb);
+    }
+
+    // Prepend MBLWHOI Library to breadcrumbs.          
+    array_unshift($breadcrumb,
+                  l('MBLWHOI Library', 'http://www.mblwhoilibrary.org')
+                 );
+
+    // Append page title.                                                       
+    $breadcrumb[] = drupal_get_title();
+
+    return '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
+}
