@@ -6,7 +6,7 @@
    http://mblwhoi.wonderwheelcreative.com/sites/all/themes/wonderwheel/all.css?1
    */
 
-@import url(http://fonts.googleapis.com/css?family=Cantarell);
+
 @import 'iconize.css';
 @import 'publications_carousel.css';
 @import 'announcements_carousel.css';
@@ -107,7 +107,7 @@ body { background: #ebebea url(img/bg.png) repeat 0 0; color: #051d1b;}
 	}
 
 h3 {
-	font: bold 108%/1.5em Cantarell, Helvetica, Arial, sans-serif;
+	font: 700 108%/1.5em futura-pt, Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	/* text-shadow: 0px 1px 1px #fff; */
 	}
@@ -141,7 +141,7 @@ h3 {
 			box-shadow:none;}
 		
 	.sec h4 {
-		font: bold 108%/1.5em Cantarell, Helvetica, Arial, sans-serif;
+		font: 700 108%/1.5em futura-pt, Helvetica, Arial, sans-serif;
 		color: #051d1b;
 		text-transform: uppercase;
 		margin-bottom: .5em;
@@ -190,7 +190,7 @@ h3 {
 	
 	#topstrip p {
 	/* color: #00948e; */ color: #40CFC9;
-	font: 11px/32px Cantarell, Helvetica, Arial, sans-serif;
+	font: 11px/32px futura-pt, Helvetica, Arial, sans-serif;
 	letter-spacing: .15em;
 	text-transform: uppercase;
 	}
@@ -235,7 +235,7 @@ h3 {
 		box-shadow:0px 0px 2px #FFFFFF;
 		-webkit-box-shadow:0px 0px 2px #FFFFFF;
 		-mox-box-shadow:0px 0px 2px #FFFFFF;
-		font: 13px/1.25em Cantarell, Helvetica, Arial, sans-serif;
+		font: 13px/1.25em futura-pt, Helvetica, Arial, sans-serif;
 		color: #44c7b8;
 		padding-top: 5px;
 		cursor: pointer;
@@ -407,7 +407,7 @@ h3 {
 	}
 	
 	#quicktabs-1 .qt_tab {
-	font: 14px/1em Cantarell, Helvetica, Arial, sans-serif;
+	font: 14px/1em futura-pt, Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
@@ -453,7 +453,7 @@ border-top-left-radius: 9px;
 border-bottom-right-radius: 9px;
 		border-color:  rgba(200,200,200,0.25);
 		color: #fff;
-		font: 108%/1em Cantarell, Helvetica, Arial, sans-serif;
+		font: 108%/1em futura-pt, Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
 		/* text-shadow: 0px 1px -1px #ccc; */
 		margin: 0 0 0 6px;
@@ -461,7 +461,7 @@ border-bottom-right-radius: 9px;
 	}
 
 		label {
-		font: 123.1%/1em Cantarell, Helvetica, Arial, sans-serif;
+		font: 123.1%/1em futura-pt, Helvetica, Arial, sans-serif;
 		font-weight: normal !important;
 		color: #051d1b;
 	}
@@ -477,7 +477,7 @@ border-bottom-right-radius: 9px;
 	}
 	
 	   #search input[type="text"] { 
-	   	font: 123.1%/1em Cantarell, Helvetica, Arial, sans-serif; 
+	   	font: 123.1%/1em futura-pt, Helvetica, Arial, sans-serif; 
 	   	padding: 4px 6px;
 	   	border: 1px solid #ccc;
 	   	color: #051d1b;
@@ -522,7 +522,7 @@ width: 300px;
 	
 	#search .adv-link a {
 	    color: #00948E;
-	    font: 123.1%/1.5em Cantarell,Helvetica,Arial,sans-serif;
+	    font: 123.1%/1.5em futura-pt,Helvetica,Arial,sans-serif;
 	}
 	
 	#block-block-4 .adv-link {
@@ -532,7 +532,7 @@ width: 300px;
 	#block-block-20 .adv-link a {margin-right: 1em;}
 	
 	#quicktabs-1 h4 {
-		font: 123.1%/1.5em Cantarell,Helvetica,Arial,sans-serif;
+		font: 123.1%/1.5em futura-pt,Helvetica,Arial,sans-serif;
 		margin-bottom: .25em;
 	}
 	
@@ -569,7 +569,7 @@ width: 300px;
 		line-height: 2em;
 		width: 2em; height: 2em;
 		display: block;
-		font: 100%/2em Cantarell, Helvetica, Arial, sans-serif; 
+		font: 100%/2em futura-pt, Helvetica, Arial, sans-serif; 
 	}
 	
 	#alpha-search a:hover, #alpha-search-tab a:hover {
@@ -598,7 +598,7 @@ width: 300px;
 	}
 	
 	h2 {
-	 font: bold 200%/1em Cantarell, Helvetica, Arial, sans-serif;
+	 font: 700 200%/1em futura-pt, Helvetica, Arial, sans-serif;
 	 text-transform: uppercase;
 	 /* text-shadow: 0px 1px 1px #fff; */
 	 margin-bottom: .5em;
@@ -642,7 +642,7 @@ width: 300px;
 	
 	.view-db-by-alpha .view-content h4 a,
 	.view-db-by-terms .view-content h4 a {
-		font: bold 108%/1em Cantarell, Helvetica, Arial, sans-serif;
+		font: 700 108%/1em futura-pt, Helvetica, Arial, sans-serif;
 		color: #051d1b;
 		line-height: 2em;
 		text-transform: uppercase;
@@ -669,7 +669,7 @@ width: 300px;
 -moz-border-radius: 3px;
 border-radius: 3px;
 	text-transform: uppercase;
-	font: 83%/1em Cantarell, Helvetica, Arial, sans-serif;
+	font: 83%/1em futura-pt, Helvetica, Arial, sans-serif;
 	}
 
 /* ------------------- @contact ------------------- */
