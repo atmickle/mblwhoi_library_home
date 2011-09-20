@@ -188,7 +188,7 @@ function wonderwheel_breadcrumb($breadcrumb){
 
     // Prepend MBLWHOI Library to breadcrumbs.          
     array_unshift($breadcrumb,
-                  l('MBLWHOI Library', 'http://www.mblwhoilibrary.org')
+                  l('MBLWHOI Library', $base_url)
                  );
 
     // Append page title.                                                       
